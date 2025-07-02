@@ -8,9 +8,12 @@ This guide helps you install and run the [Gensyn AI](https://github.com/gensyn-a
 ## 📦 Prerequisites
 
 Make sure you're on **Ubuntu 22.04+**.
+
 32GB ram 
+
 100gb storage
-4 cores  spu
+
+4 cores CPU
 
 ---
 
@@ -105,6 +108,8 @@ cd $HOME/rl-swarm/
 ./run_rl_swarm.sh
 ```
 
+and if your node terminate then use below commands for fix 👇
+
 ---
 
 ## 🧠 Patch System Diagnostics
@@ -115,7 +120,7 @@ cd $HOME/rl-swarm/
 nano genrl-swarm/src/genrl_swarm/logging_utils/system_utils.py
 ```
 
-Paste this full system info utility (already enhanced):  
+Delete All text from nano and paste this full system info utility (already enhanced):  
 ```bash
 import platform
 import subprocess
