@@ -8,6 +8,9 @@ This guide helps you install and run the [Gensyn AI](https://github.com/gensyn-a
 ## 📦 Prerequisites
 
 Make sure you're on **Ubuntu 22.04+**.
+32GB ram 
+100gb storage
+4 cores  spu
 
 ---
 
