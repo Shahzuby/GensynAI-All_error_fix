@@ -104,7 +104,7 @@ cd $HOME/rl-swarm/
 
 ---
 
-## 🧠 Patch System Diagnostics (Optional)
+## 🧠 Patch System Diagnostics
 
 ### Edit `system_utils.py` for enhanced logging:
 
@@ -230,7 +230,7 @@ def get_system_info():
 
 ---
 
-## 🧼 Optional Fix for Timeout Bug
+## 🧼 Fix for Timeout Bug
 
 ```bash
 sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' ~/rl-swarm/.venv/lib/python3.12/site-packages/hivemind/p2p/p2p_daemon.py
@@ -265,4 +265,4 @@ cd ~/rl-swarm/
 
 - Original repo: [Gensyn AI](https://github.com/gensyn-ai/rl-swarm)
 - credits goes to - https://t.me/andhiiTGkamaii
-- and admins - https://t.me/vikkyvirus https://t.me/DeviL_The_Ghost https://t.me/Zeekeyt
+- Special thanks to https://t.me/vikkyvirus https://t.me/DeviL_The_Ghost https://t.me/Zeekeyt
