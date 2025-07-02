@@ -227,6 +227,7 @@ def get_system_info():
     lines.append(DIVIDER)
     return "\n".join(lines)
 ```
+to save press cntl=x y and enter 
 
 ---
 
