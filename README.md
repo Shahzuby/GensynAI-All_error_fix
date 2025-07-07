@@ -93,7 +93,7 @@ cd ..
 ```bash
 git reset --hard
 git pull origin main
-git checkout tags/v0.5.1
+git checkout tags/v0.5.2
 git describe --tags
 ```
 
