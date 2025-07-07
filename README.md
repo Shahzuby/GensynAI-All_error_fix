@@ -110,7 +110,9 @@ cd $HOME/rl-swarm/
 
 ## ▶️ open same vps with new terminal 
 
-6. npx localtunnel --port 3000
+```bash
+npx localtunnel --port 3000
+```
 
 When web ask for pass then give your ip in the password box 
 Verify your email done enjoy 
