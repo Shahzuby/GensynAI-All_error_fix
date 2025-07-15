@@ -270,6 +270,53 @@ cd ~/rl-swarm/
 ./run_rl_swarm.sh
 ```
 
+
+
+# 🚀 Upgrade your node to New Release (v0.5.4)
+
+---
+
+### 🖥️ Step 1: Goto screen session
+
+```bash
+screen -r gensyn
+```
+
+---
+
+### 🛑 Step 2: Stop your node
+
+> Press `Ctrl + C` inside the screen to stop the running node.
+
+---
+
+### 📂 Step 3: Navigate to the `rl-swarm` directory
+
+```bash
+cd rl-swarm
+```
+
+---
+
+### 🔄 Step 4: Pull the latest release
+
+```bash
+git switch main
+git reset --hard
+git clean -fd
+git pull origin main
+```
+
+---
+
+### 🧠 Step 5: Start the swarm node
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+./run_rl_swarm.sh
+```
+
 ---
 
 ## 🧠 Notes
