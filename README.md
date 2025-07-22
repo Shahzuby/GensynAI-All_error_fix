@@ -100,8 +100,8 @@ git fetch --all --tags
 # 3. Hard reset to latest main (or origin/main)
 git reset --hard origin/main
 
-# 4. Checkout to specific version (example: v0.5.4)
-git checkout tags/v0.5.4 -b v0.5.4-branch
+# 4. Checkout to specific version (example: v0.5.5)
+git checkout tags/v0.5.5 -b v0.5.5-branch
 ```
 
 
@@ -187,6 +187,17 @@ git switch main
 git reset --hard
 git clean -fd
 git pull origin main
+# 1. Go to your repo folder
+cd ~/rl-swarm
+
+# 2. Fetch all latest tags from remote
+git fetch --all --tags
+
+# 3. Hard reset to latest main (or origin/main)
+git reset --hard origin/main
+
+# 4. Checkout to specific version (example: v0.5.5)
+git checkout tags/v0.5.5 -b v0.5.5-branch
 ```
 
 ---
