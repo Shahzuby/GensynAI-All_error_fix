@@ -88,23 +88,11 @@ cd ..
 
 ---
 
-## 📥 Update to Specific Gensyn Version
-
 ```bash
-# 1. Go to your repo folder
-cd ~/rl-swarm
-
-# 2. Fetch all latest tags from remote
-git fetch --all --tags
-
-# 3. Hard reset to latest main (or origin/main)
-git reset --hard origin/main
-
-# 4. Checkout to specific version (example: v0.5.5)
-git checkout tags/v0.5.5 -b v0.5.5-branch
+## 📥 Update to latest Gensyn Version
+cd rl-swarm
+git pull
 ```
-
-
 
 if you a old user so please copy your swarm.pem file to vps rl-swarm folder and use below command to start your node 
 
@@ -130,7 +118,22 @@ Verify your email done enjoy
 ---
 
 
-## 🧼 Fix for Timeout Bug
+## 🧼 OPTIONAL commands for error fixes
+
+
+## 📥 error fix 
+
+```bash
+# 1. Go to your repo folder
+cd ~/rl-swarm
+
+# 2. Fetch all latest tags from remote
+git fetch --all --tags
+
+# 3. Hard reset to latest main (or origin/main)
+git reset --hard origin/main
+git pull
+```
 
 ```bash
 sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' ~/rl-swarm/.venv/lib/python3.12/site-packages/hivemind/p2p/p2p_daemon.py
