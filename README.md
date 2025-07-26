@@ -89,9 +89,9 @@ cd ..
 ---
 
 ```bash
-## 📥 Update to latest Gensyn Version
 cd rl-swarm
 git pull
+git describe --tags
 ```
 
 if you a old user so please copy your swarm.pem file to vps rl-swarm folder and use below command to start your node 
