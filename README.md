@@ -129,19 +129,6 @@ pip freeze
 bash run_rl_swarm.sh
 ```
 
-```bash
-# 1. Go to your repo folder
-cd ~/rl-swarm
-
-# 2. Fetch all latest tags from remote
-git fetch --all --tags
-
-# 3. Hard reset to latest main (or origin/main)
-git reset --hard origin/main
-git pull
-```
-
-
 ### 📂 how to update your node navigate to the `rl-swarm` directory
 
 ```bash
