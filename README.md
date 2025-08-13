@@ -124,6 +124,12 @@ Verify your email done enjoy
 ## 📥 error fix 
 
 ```bash
+pip install --force-reinstall transformers==4.51.3 trl==0.19.1
+pip freeze
+bash run_rl_swarm.sh
+```
+
+```bash
 # 1. Go to your repo folder
 cd ~/rl-swarm
 
@@ -135,77 +141,20 @@ git reset --hard origin/main
 git pull
 ```
 
-```bash
-sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' ~/rl-swarm/.venv/lib/python3.12/site-packages/hivemind/p2p/p2p_daemon.py
-```
 
----
-
-## 🧪 Final Setup Commands if you face any terminate issue 
-
-```bash
-source ~/rl-swarm/.venv/bin/activate
-cd ~/rl-swarm/genrl-swarm
-pip install -e .
-```
-
-```bash
-chmod 600 ~/rl-swarm/swarm.pem
-cd ~/rl-swarm/
-./run_rl_swarm.sh
-```
-
-
-
-# 🚀 Upgrade your node to New Release (v0.5.4)
-
----
-
-### 🖥️ Step 1: Goto screen session
-
-```bash
-screen -r gensyn
-```
-
----
-
-### 🛑 Step 2: Stop your node
-
-> Press `Ctrl + C` inside the screen to stop the running node.
-
----
-
-### 📂 Step 3: Navigate to the `rl-swarm` directory
+### 📂 how to update your node navigate to the `rl-swarm` directory
 
 ```bash
 cd rl-swarm
-```
-
----
-
-### 🔄 Step 4: Pull the latest release
-
-```bash
 git switch main
 git reset --hard
 git clean -fd
 git pull origin main
-# 1. Go to your repo folder
-cd ~/rl-swarm
-
-# 2. Fetch all latest tags from remote
-git fetch --all --tags
-
-# 3. Hard reset to latest main (or origin/main)
-git reset --hard origin/main
-
-# 4. Checkout to specific version (example: v0.5.5)
-git checkout tags/v0.5.5 -b v0.5.5-branch
 ```
 
 ---
 
-### 🧠 Step 5: Start the swarm node
+### 🧠 Start the swarm node
 
 ```bash
 python3 -m venv .venv
