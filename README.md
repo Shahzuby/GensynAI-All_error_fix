@@ -137,6 +137,10 @@ stop your node via cntl+c then use these commands
 cd rl-swarm
 git stash
 git pull
+git switch main
+git reset --hard
+git clean -fd
+git pull origin main
 ```
 
 ---
