@@ -137,10 +137,6 @@ stop your node via cntl+c then use these commands
 cd rl-swarm
 git stash
 git pull
-
-python3 -m venv .venv
-source .venv/bin/activate
-./run_rl_swarm.sh
 ```
 
 ---
