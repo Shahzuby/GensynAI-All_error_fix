@@ -129,14 +129,18 @@ pip freeze
 bash run_rl_swarm.sh
 ```
 
-### 📂 how to update your node navigate to the `rl-swarm` directory
+### 📂 how to update your node to 0.6 navigate to the `rl-swarm` directory
+
+stop your node via cntl+c then use these commands
 
 ```bash
 cd rl-swarm
-git switch main
-git reset --hard
-git clean -fd
-git pull origin main
+git stash
+git pull
+
+python3 -m venv .venv
+source .venv/bin/activate
+./run_rl_swarm.sh
 ```
 
 ---
